@@ -17,19 +17,19 @@ openFace.addEventListener('click', () => {
 });
 
 //Thumbs up/down
-const thumbsUp = document.querySelector(".thumbsup");
-const thumbsDown = document.querySelector(".thumbsdown");
+const thumbsUp = document.querySelector(".up");
+const thumbsDown = document.querySelector(".down");
 
 thumbsUp.addEventListener('click', () => {
-    if (thumbsUp.classList.contains('thumbsup')) {
-        thumbsUp.classList.add('active');
-        thumbsDown.classList.remove('active');
+    if (thumbsDown.classList.contains('down')) {
+        thumbsDown.classList.add('active');
+        thumbsUp.classList.remove('active');
     }
 });
 
 thumbsDown.addEventListener('click', () => {
-    if (thumbsDown.classList.contains('thumbsdown')) {
-        thumbsDown.classList.add('active');
-        thumbsUp.classList.remove('active');
+    if (thumbsUp.classList.contains('up')) {
+        thumbsUp.classList.add('active');
+        thumbsDown.classList.remove('active');
     }
 });
