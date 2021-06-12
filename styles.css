@@ -23,3 +23,22 @@ body{
 .active{
     display: block;
 }
+/* thumbs */
+.thumbs{
+    font-size: 70px;
+    cursor: pointer;
+}
+
+#thumbs{
+    padding-top: 30px;
+}
+
+.thumbsup{
+    display: none;
+}
+.thumbsdown{
+    display: none;
+}
+.active{
+    display: block;
+}

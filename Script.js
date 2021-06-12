@@ -15,3 +15,21 @@ openFace.addEventListener('click', () => {
         openFace.classList.remove('active');
     }
 });
+
+//Thumbs up/down
+const thumbsUp = document.querySelector(".thumbsup");
+const thumbsDown = document.querySelector(".thumbsdown");
+
+thumbsUp.addEventListener('click', () => {
+    if (thumbsUp.classList.contains('thumbsup')) {
+        thumbsUp.classList.add('active');
+        thumbsDown.classList.remove('active');
+    }
+});
+
+thumbsDown.addEventListener('click', () => {
+    if (thumbsDown.classList.contains('thumbsdown')) {
+        thumbsDown.classList.add('active');
+        thumbsUp.classList.remove('active');
+    }
+});
